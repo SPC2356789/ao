@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/count', [\App\Http\Livewire\Counter::class, 'render']);
 
 Route::middleware([
     'auth:sanctum',
@@ -26,4 +25,7 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+});
+Route::get('/count', function () {
+    return view('count');
 });

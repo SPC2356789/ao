@@ -19,7 +19,7 @@ class Counter extends Component
     }
     public function render()
     {
-
+        // return "2132131";
         return view('livewire.counter');
     }
 
